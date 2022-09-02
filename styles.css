@@ -1,0 +1,52 @@
+.valueInput {
+    margin: 10px 10px 0px 10px;
+    border-style: dashed;
+    background-color: palegreen;
+    color: crimson;
+    border-color: crimson;
+    border-radius: 7px;
+    border-width: 1px;
+}
+
+.select1 {
+    border-style: dashed;
+    background-color: palegreen;
+    color: red;
+    border-color: crimson;
+    border-radius: 7px;
+    border-width: 1px;
+}
+
+.button1 {
+    margin: 20px auto 20px auto;
+    background-color: palegreen;
+    border-style: dashed;
+    color: crimson;
+    border-color: crimson;
+    border-radius: 7px;
+    border-width: 1px;
+}
+
+.textarea1 {
+    margin: 20px auto 20px auto;
+    background-color: palegreen;
+    border-style: dashed;
+    color: crimson;
+    border-color: crimson;
+    border-radius: 7px;
+    border-width: 1px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.back {
+    margin: 30px 30px 30px 30px;
+    border-width: 2px 2px 2px 2px;
+    border-color: crimson;
+    background-color: palegreen;
+    border-radius: 15px;
+}
+
+.row {
+    display: block;
+}

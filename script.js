@@ -1,4 +1,5 @@
 function ButtonClick() {
+	console.log("1");
 	let number1 = document.getElementById("input1").value;
 	let number2 = document.getElementById("input2").value;
 
@@ -6,27 +7,27 @@ function ButtonClick() {
 	let num2 = parseFloat(number2);
 
 	let selectType = document.getElementById("select").value;
+	let result = 0;
 
 	if (!isNaN(num1) && !isNaN(num2)) {
-		if (selectType == "plus") {
-			document.getElementById("results").value = num1 + num2;
+		if (selectType === "plus") {
+			result = num1 + num2;
 		}
-		if (selectType == "minus") {
-			document.getElementById("results").value = num1 - num2;
+		if (selectType === "minus") {
+			result = num1 - num2;
 		}
-		if (selectType == "mul") {
-			document.getElementById("results").value = num1 * num2;
+		if (selectType === "mul") {
+			result = num1 * num2;
 		}
-		if (selectType == "div") {
-			if (num2 != 0) {
-				document.getElementById("results").value = num1 / num2;
+		if (selectType === "div") {
+			if (Math.abs(num2) > Number.EPSILON) {
+				result = num1 / num2;
 			}
-			else document.getElementById("results").value = "Cannot div by 0!";
+			else result = "Cannot div by 0!";
 		}
 	}
 	else {
-		document.getElementById("results").value = "Error! You didn't enter a number";
+		result = "Error! You didn't enter a number";
 	}
-	console.log(num1);
-	console.log(num2);
+	document.getElementById("results").value = result;
 }
